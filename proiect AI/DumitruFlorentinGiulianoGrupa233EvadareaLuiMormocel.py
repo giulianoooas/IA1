@@ -438,6 +438,9 @@ def uniform_cost(gr, nrSolutiiCautate=1, tip_euristica = 1):
 def alageOEuristica():
     return randint(0,3) # imi va returna random o euristica dintre cele definite de mine
 
+def unNumarDeSolutii():
+    return randint(1,5) # imi va returna un numar random intre 1 si 3
+
 if __name__ == "__main__":   
 
     """
@@ -457,9 +460,10 @@ if __name__ == "__main__":
             numarNoduritotal, maxLungimeCoada,gasitSolutie = 0,0,False
             res += "Algoritmul A*:\n"
             euristica = alageOEuristica()
-            res += f"Euristica folosita este {euristica}\n"
+            nrSolutii = unNumarDeSolutii()
+            res += f"Euristica folosita este {euristica}\nNumarul de solutii cautate este {nrSolutii}\n"
             start = time()
-            a_star(g,4,euristica)
+            a_star(g,nrSolutii,euristica)
             end = time()
             if not gasitSolutie:
                 res += "\nProblema n-are solutie!\n\n"
@@ -479,9 +483,10 @@ if __name__ == "__main__":
             numarNoduritotal, maxLungimeCoada,gasitSolutie = 0,0,False
             res += "Algoritmul UCP:\n"
             euristica = alageOEuristica()
-            res += f"Euristica folosita este {euristica}\n"
+            nrSolutii = unNumarDeSolutii()
+            res += f"Euristica folosita este {euristica}\nNumarul de solutii cautate este {nrSolutii}\n"            
             start = time()
-            uniform_cost(g,4,euristica)
+            uniform_cost(g,nrSolutii,euristica)
             end = time()
             if not gasitSolutie:
                 res += "\nProblema n-are solutie!\n\n"
@@ -490,9 +495,10 @@ if __name__ == "__main__":
             numarNoduritotal, maxLungimeCoada,gasitSolutie = 0,0,False
             res +="Algoritmul IDA*:\n"
             euristica = alageOEuristica()
-            res += f"Euristica folosita este {euristica}\n"
+            nrSolutii = unNumarDeSolutii()
+            res += f"Euristica folosita este {euristica}\nNumarul de solutii cautate este {nrSolutii}\n"
             start = time()
-            ida_star(g,2,euristica)
+            ida_star(g,nrSolutii,euristica)
             end = time()
             if not gasitSolutie:
                 res += "\nProblema n-are solutie!\n\n"
