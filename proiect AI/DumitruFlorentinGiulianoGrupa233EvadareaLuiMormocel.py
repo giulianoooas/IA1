@@ -174,8 +174,8 @@ class Graph:
     def calculeaza_h(self, info, tip_euristica= 0):
         if tip_euristica == 0: # euristica banala
             if info.frunza.id == "Afara": # daca este solutie returnez o, altfel 1
-                return 1
-            return 0
+                return 0
+            return 1
         elif tip_euristica == 1: # eurstica mea definita, ce returneaza distanta de la nodul meu la malul lacului, facand raza - distanta la centru
             return  self.raza-sqrt(info.frunza.x ** 2 + info.frunza.y ** 2)
         elif tip_euristica == 2:
