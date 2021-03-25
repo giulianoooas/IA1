@@ -173,10 +173,10 @@ class Graph:
     
     def calculeaza_h(self, info, tip_euristica= 0):
         if tip_euristica == 0: # euristica banala
-            if not self.distantaFrunza(info.frunza.x, info.frunza.y) > self.raza and info.greutate > 0:
+            if info.frunza.id == "Afara": # daca este solutie returnez o, altfel 1
                 return 1
             return 0
-        elif tip_euristica == 1: # eurstica mea definita, ce returneaza distanta de la nodul meu la centru, de aceea o voi returna cu -, ma intreseaza sa fie cat nai mare distanta
+        elif tip_euristica == 1: # eurstica mea definita, ce returneaza distanta de la nodul meu la malul lacului, facand raza - distanta la centru
             return  self.raza-sqrt(info.frunza.x ** 2 + info.frunza.y ** 2)
         elif tip_euristica == 2:
             return ((self.raza - abs(info.frunza.x)) + (self.raza - abs(info.frunza.y))) / 2  # acolo calculez care este media dintre  distantele pe x si y pana la mal
@@ -485,7 +485,7 @@ if __name__ == "__main__":
 
             numarNoduritotal, maxLungimeCoada,gasitSolutie = 0,0,False
             res +="Algoritmul IDA*:\n"
-            euristica = 0
+            euristica = alageOEuristica()
             res += f"Euristica folosita este {euristica}\n"
             start = time()
             ida_star(g,2,euristica)

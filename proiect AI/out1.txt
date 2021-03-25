@@ -1,36 +1,36 @@
 Algoritmul A*:
+Euristica folosita este 3
+
+Problema n-are solutie!
+
+Timul necesar rularii algoritmului A* : 0.0009984970092773438
+Numarul total de noduri folosit : 8
+Numarul maxim de noduri in coada : 4
+
+Algoritmul A* eficient:
 Euristica folosita este 0
 
 Problema n-are solutie!
 
-Timul necesar rularii algoritmului A* : 0.0
-Numarul total de noduri folosit : 8
-Numarul maxim de noduri in coada : 5
-
-Algoritmul A* eficient:
-Euristica folosita este 1
-
-Problema n-are solutie!
-
-Timul necesar rularii algoritmului A* eficient : 0.0012254714965820312
+Timul necesar rularii algoritmului A* eficient : 0.001039743423461914
 Numarul total de noduri folosit : 8
 Numarul maxim de noduri in coada : 5
 
 Algoritmul UCP:
-Euristica folosita este 1
+Euristica folosita este 2
 
 Problema n-are solutie!
 
-Timul necesar rularii algoritmului UCP : 0.0005457401275634766
+Timul necesar rularii algoritmului UCP : 0.0009615421295166016
 Numarul total de noduri folosit : 8
 Numarul maxim de noduri in coada : 5
 
 Algoritmul IDA*:
-Euristica folosita este 0
+Euristica folosita este 2
 
 Problema n-are solutie!
 
-Timul necesar rularii algoritmului IDA* : 0.0009789466857910156
-Numarul total de noduri folosit : 17
+Timul necesar rularii algoritmului IDA* : 0.0029973983764648438
+Numarul total de noduri folosit : 28
 Numarul maxim de noduri in coada : 3
 
