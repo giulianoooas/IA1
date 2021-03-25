@@ -176,8 +176,8 @@ class Graph:
             if info.frunza.id == "Afara": # daca este solutie returnez o, altfel 1
                 return 0
             return 1
-        elif tip_euristica == 1: # eurstica mea definita, ce returneaza distanta de la nodul meu la malul lacului, facand raza - distanta la centru
-            return  self.raza-sqrt(info.frunza.x ** 2 + info.frunza.y ** 2)
+        elif tip_euristica == 1: # eurstica mea definita, ce returneaza distanta de la nodul meu la malul lacului, facand raza - distanta la centru, si am impartit la raza pentru a obtine un numar intre 0 si 1
+            return (self.raza-info.frunza.distanta())/self.raza
         elif tip_euristica == 2:
             return 1 / (1 + info.frunza.distanta())  # in cazul  euristicii acesteia, cu cat ma indepartez de centru(care are h = 1) euristica devine mai mica
         else:
@@ -241,8 +241,12 @@ class Graph:
                     nodActual = NodParcurgere(inf,nodCurent,cost,h,frunze, i1)
                     l.append(nodActual)
             if (greutate/3 >= self.raza - nodCurent.calculeazaDistanta()) and (greutate > 1): # aici verific daca pot sari pe mal direct, automat are eurstica 0
+                """
+                    In cazul  in care am reusit de pe o frunza sa sar direct pe mal
+                    voi face id-ul malului "Afara", iar coordonatele vor fi (raza,0)
+                """
                 cost = nodCurent.g + 1
-                info = Info(Frunza("Afara", self.raza+1,self.raza+1),greutate-1)
+                info = Info(Frunza("Afara", self.raza,0),greutate-1)
                 h = self.calculeaza_h(info,tip_euristica)
                 nodActual = NodParcurgere(info,nodCurent,cost,h,[],i1)
                 l.append(nodActual)
