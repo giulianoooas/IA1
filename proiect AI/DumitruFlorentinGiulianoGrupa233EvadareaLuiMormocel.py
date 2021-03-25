@@ -179,7 +179,7 @@ class Graph:
         elif tip_euristica == 1: # eurstica mea definita, ce returneaza distanta de la nodul meu la malul lacului, facand raza - distanta la centru
             return  self.raza-sqrt(info.frunza.x ** 2 + info.frunza.y ** 2)
         elif tip_euristica == 2:
-            return ((self.raza - abs(info.frunza.x)) + (self.raza - abs(info.frunza.y))) / 2  # acolo calculez care este media dintre  distantele pe x si y pana la mal
+            return 1 / (1 + info.frunza.distanta())  # in cazul  euristicii acesteia, cu cat ma indepartez de centru(care are h = 1) euristica devine mai mica
         else:
             return info.greutate # aceasta este euristica neadmisibila
             """
