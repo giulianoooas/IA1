@@ -481,7 +481,7 @@ if __name__ == "__main__":
             res += f"Timul necesar rularii algoritmului A* eficient : {end - start}\nNumarul total de noduri folosit : {numarNoduritotal}\nNumarul maxim de noduri in coada : {maxLungimeCoada}\n\n"
 
             numarNoduritotal, maxLungimeCoada,gasitSolutie = 0,0,False
-            res += "Algoritmul UCS:\n"
+            res += "Algoritmul UCP:\n"
             euristica = alageOEuristica()
             nrSolutii = unNumarDeSolutii()
             res += f"Euristica folosita este {euristica}\nNumarul de solutii cautate este {nrSolutii}\n"            
@@ -490,7 +490,7 @@ if __name__ == "__main__":
             end = time()
             if not gasitSolutie:
                 res += "\nProblema n-are solutie!\n\n"
-            res += f"Timul necesar rularii algoritmului UCS : {end - start}\nNumarul total de noduri folosit : {numarNoduritotal}\nNumarul maxim de noduri in coada : {maxLungimeCoada}\n\n"
+            res += f"Timul necesar rularii algoritmului UCP : {end - start}\nNumarul total de noduri folosit : {numarNoduritotal}\nNumarul maxim de noduri in coada : {maxLungimeCoada}\n\n"
 
             numarNoduritotal, maxLungimeCoada,gasitSolutie = 0,0,False
             res +="Algoritmul IDA*:\n"

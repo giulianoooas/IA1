@@ -1,157 +1,55 @@
 Algoritmul A*:
-Euristica folosita este 2
-Numarul de solutii cautate este 4
+Euristica folosita este 0
+Numarul de solutii cautate este 5
 
-1)Broscuta se afla pe frunza initiala id2(-1,1).
-Greutate broscuta: 6
-2)Broscuta sarit de la id2(-1,1) la id6(-3,1).
-Broscuta a mancat 1 insecte. Greutate broscuta: 6
-3)Broscuta sarit de la id6(-3,1) la id7(-4,1).
-Greutate broscuta: 5
-4)Broscuta sarit de la id7(-4,1) la id9(-5,0).
-Broscuta a mancat 2 insecte. Greutate broscuta: 6
-5)Broscuta a ajuns la mal in 4 sarituri.
+1)Broscuta se afla pe frunza initiala id1(-73,84).
+Greutate broscuta: 1000
+2)Broscuta a ajuns la mal in 1 sarituri.
 
 
 
-
-1)Broscuta se afla pe frunza initiala id2(-1,1).
-Greutate broscuta: 6
-2)Broscuta sarit de la id2(-1,1) la id6(-3,1).
-Broscuta a mancat 1 insecte. Greutate broscuta: 6
-3)Broscuta sarit de la id6(-3,1) la id7(-4,1).
-Broscuta a mancat 1 insecte. Greutate broscuta: 6
-4)Broscuta sarit de la id7(-4,1) la id9(-5,0).
-Broscuta a mancat 2 insecte. Greutate broscuta: 7
-5)Broscuta a ajuns la mal in 4 sarituri.
-
-
-
-
-1)Broscuta se afla pe frunza initiala id2(-1,1).
-Greutate broscuta: 6
-2)Broscuta sarit de la id2(-1,1) la id6(-3,1).
-Broscuta a mancat 1 insecte. Greutate broscuta: 6
-3)Broscuta sarit de la id6(-3,1) la id7(-4,1).
-Broscuta a mancat 1 insecte. Greutate broscuta: 6
-4)Broscuta sarit de la id7(-4,1) la id9(-5,0).
-Broscuta a mancat 1 insecte. Greutate broscuta: 6
-5)Broscuta a ajuns la mal in 4 sarituri.
-
-
-
-
-1)Broscuta se afla pe frunza initiala id2(-1,1).
-Greutate broscuta: 6
-2)Broscuta sarit de la id2(-1,1) la id6(-3,1).
-Broscuta a mancat 1 insecte. Greutate broscuta: 6
-3)Broscuta sarit de la id6(-3,1) la id7(-4,1).
-Broscuta a mancat 2 insecte. Greutate broscuta: 7
-4)Broscuta sarit de la id7(-4,1) la id9(-5,0).
-Broscuta a mancat 2 insecte. Greutate broscuta: 8
-5)Broscuta a ajuns la mal in 4 sarituri.
-
-
-
-Timul necesar rularii algoritmului A* : 0.009034156799316406
-Numarul total de noduri folosit : 151
-Numarul maxim de noduri in coada : 102
+Timul necesar rularii algoritmului A* : 0.020999431610107422
+Numarul total de noduri folosit : 2
+Numarul maxim de noduri in coada : 1
 
 Algoritmul A* eficient:
-Euristica folosita este 1
+Euristica folosita este 2
 
-1)Broscuta se afla pe frunza initiala id2(-1,1).
-Greutate broscuta: 6
-2)Broscuta sarit de la id2(-1,1) la id6(-3,1).
-Broscuta a mancat 1 insecte. Greutate broscuta: 6
-3)Broscuta sarit de la id6(-3,1) la id7(-4,1).
-Greutate broscuta: 5
-4)Broscuta sarit de la id7(-4,1) la id9(-5,0).
-Broscuta a mancat 2 insecte. Greutate broscuta: 6
-5)Broscuta a ajuns la mal in 4 sarituri.
+1)Broscuta se afla pe frunza initiala id1(-73,84).
+Greutate broscuta: 1000
+2)Broscuta a ajuns la mal in 1 sarituri.
 
 
 
-Timul necesar rularii algoritmului A* eficient : 0.009017229080200195
-Numarul total de noduri folosit : 151
-Numarul maxim de noduri in coada : 102
+Timul necesar rularii algoritmului A* eficient : 0.023999929428100586
+Numarul total de noduri folosit : 2
+Numarul maxim de noduri in coada : 1
 
 Algoritmul UCP:
 Euristica folosita este 1
-Numarul de solutii cautate este 1
+Numarul de solutii cautate este 5
 
-1)Broscuta se afla pe frunza initiala id2(-1,1).
-Greutate broscuta: 6
-2)Broscuta sarit de la id2(-1,1) la id6(-3,1).
-Greutate broscuta: 5
-3)Broscuta sarit de la id6(-3,1) la id7(-4,1).
-Broscuta a mancat 1 insecte. Greutate broscuta: 5
-4)Broscuta sarit de la id7(-4,1) la id9(-5,0).
-Broscuta a mancat 2 insecte. Greutate broscuta: 6
-5)Broscuta a ajuns la mal in 4 sarituri.
+1)Broscuta se afla pe frunza initiala id1(-73,84).
+Greutate broscuta: 1000
+2)Broscuta a ajuns la mal in 1 sarituri.
 
 
 
-Timul necesar rularii algoritmului UCP : 0.009946107864379883
-Numarul total de noduri folosit : 152
-Numarul maxim de noduri in coada : 102
+Timul necesar rularii algoritmului UCP : 0.020999908447265625
+Numarul total de noduri folosit : 2
+Numarul maxim de noduri in coada : 1
 
 Algoritmul IDA*:
 Euristica folosita este 3
 Numarul de solutii cautate este 4
 
-1)Broscuta se afla pe frunza initiala id2(-1,1).
-Greutate broscuta: 6
-2)Broscuta sarit de la id2(-1,1) la id6(-3,1).
-Greutate broscuta: 5
-3)Broscuta sarit de la id6(-3,1) la id7(-4,1).
-Broscuta a mancat 1 insecte. Greutate broscuta: 5
-4)Broscuta sarit de la id7(-4,1) la id9(-5,0).
-Broscuta a mancat 2 insecte. Greutate broscuta: 6
-5)Broscuta a ajuns la mal in 4 sarituri.
+1)Broscuta se afla pe frunza initiala id1(-73,84).
+Greutate broscuta: 1000
+2)Broscuta a ajuns la mal in 1 sarituri.
 
 
 
-
-1)Broscuta se afla pe frunza initiala id2(-1,1).
-Greutate broscuta: 6
-2)Broscuta sarit de la id2(-1,1) la id6(-3,1).
-Greutate broscuta: 5
-3)Broscuta sarit de la id6(-3,1) la id7(-4,1).
-Broscuta a mancat 2 insecte. Greutate broscuta: 6
-4)Broscuta sarit de la id7(-4,1) la id9(-5,0).
-Broscuta a mancat 1 insecte. Greutate broscuta: 6
-5)Broscuta a ajuns la mal in 4 sarituri.
-
-
-
-
-1)Broscuta se afla pe frunza initiala id2(-1,1).
-Greutate broscuta: 6
-2)Broscuta sarit de la id2(-1,1) la id6(-3,1).
-Greutate broscuta: 5
-3)Broscuta sarit de la id6(-3,1) la id7(-4,1).
-Broscuta a mancat 3 insecte. Greutate broscuta: 7
-4)Broscuta sarit de la id7(-4,1) la id9(-5,0).
-Greutate broscuta: 6
-5)Broscuta a ajuns la mal in 4 sarituri.
-
-
-
-
-1)Broscuta se afla pe frunza initiala id2(-1,1).
-Greutate broscuta: 6
-2)Broscuta sarit de la id2(-1,1) la id6(-3,1).
-Greutate broscuta: 5
-3)Broscuta sarit de la id6(-3,1) la id8(-4,0).
-Broscuta a mancat 1 insecte. Greutate broscuta: 5
-4)Broscuta sarit de la id8(-4,0) la id9(-5,0).
-Broscuta a mancat 2 insecte. Greutate broscuta: 6
-5)Broscuta a ajuns la mal in 4 sarituri.
-
-
-
-Timul necesar rularii algoritmului IDA* : 0.022036314010620117
-Numarul total de noduri folosit : 330
-Numarul maxim de noduri in coada : 8
+Timul necesar rularii algoritmului IDA* : 0.024000167846679688
+Numarul total de noduri folosit : 2
+Numarul maxim de noduri in coada : 1
 
